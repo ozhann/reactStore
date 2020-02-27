@@ -7,19 +7,19 @@ const User = require("../models/User");
 /* Here we'll write the routes dedicated to handle the user logic (auth) */
 
 router.post("/signup", (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
 
-  if (!username) {
-    return res.status(400).json({ message: "Username can't be empty" });
+  if (!email) {
+    return res.status(400).json({ message: "Email can't be empty" });
   }
   if (password.length < 8) {
     return res.status(400).json({ message: "Password is too short" });
   }
 
-  User.findOne({ username: username })
+  User.findOne({ email: req.body.email })
     .then(found => {
       if (found) {
-        return res.status(400).json({ message: "Username is already taken" });
+        return res.status(400).json({ message: "Email is already exist" });
       }
       return bcrypt
         .genSalt()
