@@ -2,7 +2,7 @@
 
 const router = require("express").Router();
 const usersRoutes = require("./users");
-const productsRoutes = require("./products")
+const productsRoutes = require("./products");
 
 router.get("/", (req, res) => {
   res.send("This is home");
