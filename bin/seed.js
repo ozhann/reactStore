@@ -19,7 +19,11 @@ const defaultProduct = [
       "This tv dinner dog toy offers your pup a delicious medley of different materials and noisemakers. Your dog will be enticed by this toy’s ballistic nylon piping and Crazy Crinkle lining.",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: [
+      "public/images/products/furstdownfootb1.png",
+      "public/images/products/tabulartvdinner2.png",
+      "public/images/products/tabulartvdinner3.png"
+    ]
   },
   {
     title: "The Mythical Mutt Bundle",
@@ -28,7 +32,11 @@ const defaultProduct = [
       "Spot a pegasus in the wild… we mean in your living room. POSE & PLAY - Pose: Bungee straps fit on a variety of pup heads, the wings can be secured with two different velcro lengths to fit around their belly. Play: The mixed medley of materials (including fabulous gold lame!) make this toy a treat to gnaw on. Both wings and horn have long hair and are packed with crinkle, perfect for pups who life to thrash and shred.",
     price: 20,
     onStock: 30,
-    images: "...."
+    images: [
+      "public/images/products/themythicalbutbundle1.png",
+      "public/images/products/themythicalbutbundle2.png",
+      "public/images/products/themythicalbutbundle3.png"
+    ]
   },
   {
     title: "Furricane Floyd",

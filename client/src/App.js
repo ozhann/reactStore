@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Navbar from "./components/Navbar";
-import Signup from "./components/Signup"
-import Login from "./components/Login"
-
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import Footer from "./components/Footer";
+import Welcome from "./components/Welcome";
 
 //import { Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -15,6 +14,8 @@ function App() {
       <Navbar />
       <Signup />
       <Login />
+      <Welcome />
+      <Footer />
     </div>
   );
 }
