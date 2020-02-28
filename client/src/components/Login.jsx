@@ -10,7 +10,7 @@ export default class Login extends Component {
 
   handleChange = event => {
     this.setState({
-      [this.target.name]: event.target.value
+      [event.target.name]: event.target.value
     });
   };
 
@@ -54,6 +54,7 @@ export default class Login extends Component {
             name="password"
             onChange={this.handleChange}
           />
+          <button type="submit">Login</button>
         </form>
         {this.state.message && <p>{this.state.message}</p>}
       </React.Fragment>

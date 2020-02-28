@@ -7,7 +7,8 @@ const mongoose = require("mongoose");
 router.get("/products", (req, res, next) => {
   Product.find({})
     .then(products => {
-      res.json({ message: products });
+      console.log(products);
+      res.json({ products: products });
     })
     .catch(err => {
       res.status(500).json({

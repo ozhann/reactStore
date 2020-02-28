@@ -8,12 +8,10 @@ export default class Signup extends Component {
     message: ""
   };
 
-
-  // ask --- [this.target.name]
-
   handleChange = event => {
     this.setState({
-      [this.target.name]: event.target.value
+      //by putting target.name in array, we handle multiple changes for different input labels
+      [event.target.name]: event.target.value
     });
   };
 
@@ -22,7 +20,7 @@ export default class Signup extends Component {
 
     axios
       .post("/api/auth/signup", {
-        email: this.state.username,
+        email: this.state.email,
         password: this.state.password
       })
       .then(response => {
