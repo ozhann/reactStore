@@ -34,7 +34,7 @@ router.get("/sortByPrice", (req, res, next) => {
     if (product.price < request.query.price) {
       return true;
     }
-    res.json({filtered})
+    res.json({ filtered });
   });
 });
 
