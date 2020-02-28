@@ -1,0 +1,21 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+
+const Navbar = props => {
+  //   const logout = () => {
+  //     axios.delete("/api/auth/logout").then(() => {
+  //       props.setUser(null);
+  //     });
+  //   };
+
+  return (
+    <nav className="navbar">
+      <Link to="/">Home</Link>
+      <Link to="/signup">Signup</Link>
+      <Link to="/login">Login</Link>
+    </nav>
+  );
+};
+
+export default Navbar;

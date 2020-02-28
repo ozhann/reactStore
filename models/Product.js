@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const productSchema = new Schema(
   {
-    title: { type: String, required: true },
+    title: { type: String, require: true },
     category: {
       type: String,
       enum: ["Collars", "Leashes", "Beds", "Toys", "Bowls", "Food", "Apparel"]
