@@ -19,7 +19,11 @@ const defaultProduct = [
       "This tv dinner dog toy offers your pup a delicious medley of different materials and noisemakers. Your dog will be enticed by this toy’s ballistic nylon piping and Crazy Crinkle lining.",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: [
+      "../images/products/tabulartvdinner1.png",
+      "../images/products/tabulartvdinner2.png",
+      "../images/products/tabulartvdinner3.png"
+    ]
   },
   {
     title: "The Mythical Mutt Bundle",
@@ -28,7 +32,7 @@ const defaultProduct = [
       "Spot a pegasus in the wild… we mean in your living room. POSE & PLAY - Pose: Bungee straps fit on a variety of pup heads, the wings can be secured with two different velcro lengths to fit around their belly. Play: The mixed medley of materials (including fabulous gold lame!) make this toy a treat to gnaw on. Both wings and horn have long hair and are packed with crinkle, perfect for pups who life to thrash and shred.",
     price: 20,
     onStock: 30,
-    images: "...."
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "Furricane Floyd",
@@ -37,7 +41,7 @@ const defaultProduct = [
       "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "Furricane Floyd",
@@ -46,7 +50,7 @@ const defaultProduct = [
       "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "Furst Down Football",
@@ -55,7 +59,7 @@ const defaultProduct = [
       "Go long! This bouncy, squeaky football is perfect for fetch. See if your Wide Retriever can catch a Howl Mary!",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "Furricane Floyd",
@@ -64,7 +68,7 @@ const defaultProduct = [
       "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "The Dognald Dog Toy",
@@ -73,7 +77,7 @@ const defaultProduct = [
       "One doggedly determined Repuplican.The Dognald is ready to lead ... your pup to playtime. Your dog will love The Dognald's reinforced seams, perfect for tough debates. And, you'll never hear this plush guy squeak. Squeaking is for wimps. When chewed, The Dognald grunts. Like a winner. One of Bark's best-selling toys of all time, your pup will love it!",
     price: 10,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   },
   {
     title: "Peanut Butter Benebone",
@@ -82,7 +86,7 @@ const defaultProduct = [
       "Like peanut butter, but lasts fur a long, long time.This Peanut Butter Benebone chew will drive your dog … nuts. We tried making a chew toy entirely out of Peanut Butter, but it turns out those don't last very long. Seconds, with most dogs. The folks at Benebone had a stroke of genius though, adding nylon, the classic tough-to-chew component. Your pooch will love chewing on this peanut-infused bone, and the super-durable non-peanut ingredient (there's only one) will keep even heavy chewers busy for a long while. Designed with your dog’s safety and pleasure in mind, it’s curved, so its center is up off the ground for superior chews. Importantly, the chew is indeed for chewing, and not consuming (so keep in one piece, pups).",
     price: 8,
     onStock: 20,
-    images: "zuz"
+    images: ["../images/products/tabulartvdinner1.png"]
   }
 ];
 

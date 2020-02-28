@@ -4,7 +4,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
-import Products from "./components/Products"
+import Products from "./components/Products";
+import Footer from "./components/Footer";
+import Welcome from "./components/Welcome";
 
 class App extends React.Component {
   state = {
@@ -33,7 +35,13 @@ class App extends React.Component {
             <Login history={props.history} setUser={this.setUser} />
           )}
         />
-        <Route exact path="/products" render={props => <Products {...props} user={this.state.user}/>}/>
+        <Route
+          exact
+          path="/products"
+          render={props => <Products {...props} user={this.state.user} />}
+        />
+        <Welcome />
+        <Footer />
       </div>
     );
   }
