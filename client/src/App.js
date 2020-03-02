@@ -5,8 +5,12 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Products from "./components/Products";
+import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
+
+
+
 
 class App extends React.Component {
   state = {
@@ -40,8 +44,14 @@ class App extends React.Component {
           path="/products"
           render={props => <Products {...props} user={this.state.user} />}
         />
-        <Welcome />
-        <Footer />
+        {/* <Route exact path = "/products/:productId" render = {props => <ProductDetail {...props}  } */}
+        <Route
+          exact
+          path="/products/:productId"
+          render={props => <ProductDetail {...props} user={this.state.user} />}
+        />
+        {/* <Welcome />
+        <Footer /> */}
       </div>
     );
   }

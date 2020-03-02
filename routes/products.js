@@ -1,8 +1,14 @@
 const router = require("express").Router();
 const Product = require("../models/Product");
-const mongoose = require("mongoose");
 
 /* Here we'll write the routes for the product */
+
+// add to cart route 
+
+// router.put("/shoppingcard/:id", (req, res, next) => {
+//   User.findByIdaAndUpdate(req.user._id, {shopp})
+//   .then()
+// })
 
 router.get("/products", (req, res, next) => {
   Product.find({})
@@ -19,10 +25,11 @@ router.get("/products", (req, res, next) => {
 
 router.get("/products/:productId", (req, res, next) => {
   const productId = req.params.productId;
-  Product.findOne({ productID: productId })
+  console.log("productId", productId);
+  Product.findOne({ _id: productId })
     .then(product => {
       if (product) {
-        res.json({ message: product });
+        res.json({ product: product });
       }
     })
     .catch(err => {
