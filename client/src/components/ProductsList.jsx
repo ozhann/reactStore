@@ -20,7 +20,7 @@ const ProductsList = props => {
             {product.title}
           </Link>
           <h5>{product.price}</h5>
-          <button>Add to cart</button>
+          <button onClick={() => props.addToCart(product)}>Add to cart</button>
         </div>
       </div>
     );

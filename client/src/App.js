@@ -11,7 +11,8 @@ import Welcome from "./components/Welcome";
 
 class App extends React.Component {
   state = {
-    user: this.props.user
+    user: this.props.user,
+    shoppingCart: []
   };
 
   setUser = userObj => {
@@ -20,7 +21,20 @@ class App extends React.Component {
     });
   };
 
+  addToCart = product => {
+    console.log("added to cart,", product);
+    this.setState(
+      {
+        shoppingCart: [...this.state.shoppingCart, product]
+      },
+      () => {
+        localStorage.setItem("shoppingCart", this.state.shoppingCart);
+      }
+    );
+  };
+
   render() {
+    console.log(this.state.shoppingCart);
     return (
       <Router>
         <div className="App">
@@ -41,13 +55,24 @@ class App extends React.Component {
             <Route
               exact
               path="/products"
-              render={props => <Products {...props} user={this.state.user} />}
+              render={props => (
+                <Products
+                  {...props}
+                  user={this.state.user}
+                  addToCart={this.addToCart}
+                />
+              )}
             />
+
             <Route
               exact
               path="/products/:productId"
               render={props => (
-                <ProductDetail {...props} user={this.state.user} />
+                <ProductDetail
+                  {...props}
+                  user={this.state.user}
+                  addToCart={this.addToCart}
+                />
               )}
             />
 

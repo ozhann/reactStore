@@ -18,18 +18,6 @@ export default class ProductDetail extends Component {
     });
   }
 
-  // create handleAddtoCart, include axios with product id, send it to backend , find req.user and pass it to user
-
-  // handleAddToCart = () => {
-  //   axios.push("/shoppingcard/:userId").then(response => {
-  //     this.setState({});
-  //   });
-  // };
-
-  // handle AddToCart -> Updatıng some ınfo
-  // Whıch ınfo? The product tıtleö and the quantıty
-  // Where? Shoppıng cart seperate page.
-
   render() {
     const product = this.state.product;
 
@@ -47,7 +35,9 @@ export default class ProductDetail extends Component {
             <h2>{product.product.price} Euro</h2>
             <p>{product.product.descriptionFull}</p>
           </div>
-          <button onClick={this.handleAddToCart}>Add to Cart</button>
+          <button onClick={() => this.props.addToCart(product)}>
+            Add to Cart
+          </button>
         </div>
       </div>
     );
