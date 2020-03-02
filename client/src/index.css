@@ -60,3 +60,26 @@ code {
 .product-image img {
   max-width: 100%;
 }
+
+.product-details-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-gallery {
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.product-gallery img {
+  max-width: 100%;
+}
+
+.product-description {
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
