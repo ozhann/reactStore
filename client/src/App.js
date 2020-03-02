@@ -28,13 +28,23 @@ class App extends React.Component {
         shoppingCart: [...this.state.shoppingCart, product]
       },
       () => {
-        localStorage.setItem("shoppingCart", this.state.shoppingCart);
+        localStorage.setItem(
+          "shoppingCart",
+          JSON.stringify(this.state.shoppingCart)
+        );
       }
     );
   };
 
   render() {
     console.log(this.state.shoppingCart);
+
+    // Put below ınto CART COMPONENT
+    // let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
+
+    //loop over shoppıngCart
+    // console.log("SHOOOOPIINNNGGGG", shoppingCart, shoppingCart.length);
+
     return (
       <Router>
         <div className="App">
