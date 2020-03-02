@@ -40,7 +40,7 @@ const defaultProduct = [
   },
   {
     title: "Furricane Floyd",
-    category: "Toys",
+    category: "Apparel",
     descriptionFull:
       "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
     price: 10,
@@ -53,13 +53,13 @@ const defaultProduct = [
     ]
   },
   {
-    title: "Furricane Floyd",
+    title: "Warm hood",
     category: "Toys",
     descriptionFull:
-      "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
+      "Your dog will instantly feel the warmth as you pull this hood over your dog's head",
     price: 10,
     onStock: 20,
-    images: ["../images/products/tabulartvdinner1.png"]
+    images: ["../images/products/blackhat.png"]
   },
   {
     title: "Furst Down Football",
@@ -74,13 +74,13 @@ const defaultProduct = [
     ]
   },
   {
-    title: "Furricane Floyd",
-    category: "Toys",
+    title: "Booties",
+    category: "Apparel",
     descriptionFull:
-      "It's the sound of the squeaker, it's the thrill of the bite. Designed for the dog who loves to let it rip.",
+      "Protect your Dog’s paws from ice, snow and salt with comfortable dog booties. Those long slipper-style booties are easy to put on and stay on with double velcro straps.",
     price: 10,
     onStock: 20,
-    images: ["../images/products/tabulartvdinner1.png"]
+    images: ["../images/products/boots.png"]
   },
   {
     title: "The Dognald Dog Toy",
@@ -106,6 +106,55 @@ const defaultProduct = [
       "../images/products/chewer2",
       "../images/products/chewer3"
     ]
+  },
+  {
+    title: "Pyjama",
+    category: "Apparel",
+    descriptionFull:
+      "Protect your Dog’s paws from ice, snow and salt with comfortable dog booties. Those long slipper-style booties are easy to put on and stay on with double velcro straps.",
+    price: 10,
+    onStock: 20,
+    images: ["../images/products/pyjama.png"]
+  },
+  {
+    title: "Warm Hand Knitted Hat",
+    category: "Apparel",
+    descriptionFull:
+      "Your dog will instantly feel the warmth as you pull this hood over your dog's head.",
+    price: 10,
+    onStock: 20,
+    images: ["../images/products/handknittedhat.png"]
+  },
+  {
+    title: "Dog Lead",
+    category: "Leads",
+    descriptionFull:
+      "Our dog leads are made using 100% cotton rope and cord. Each lead is hand-dyed and spliced using traditional methods. All hardware is finished in brass and a Jute and Sable engraved charm completes the look. Soft on your hands, yet built to last. ",
+    price: 10,
+    onStock: 20,
+    images: [
+      "../images/products/lead1.png",
+      "../images/products/lead2.png",
+      "../images/products/lead3.png"
+    ]
+  },
+  {
+    title: "Esmar Collar",
+    category: "Collars",
+    descriptionFull:
+      "Our collars are made using the finest Italian Nappa leather, chosen for its beautifully soft, yet durable properties. The collars have a padded insert that provides extra cushioning and are lined with fine suede for ultimate comfort.",
+    price: 10,
+    onStock: 20,
+    images: ["../images/products/collar1.png", "../images/products/collar2.png"]
+  },
+  {
+    title: "Dog Lead",
+    category: "Leads",
+    descriptionFull:
+      "Our dog leads are made using 100% cotton rope and cord. Each lead is hand-dyed and spliced using traditional methods. All hardware is finished in brass and a Jute and Sable engraved charm completes the look. Soft on your hands, yet built to last. ",
+    price: 10,
+    onStock: 20,
+    images: ["../images/products/lead11.png", "../images/products/lead12.png"]
   }
 ];
 
