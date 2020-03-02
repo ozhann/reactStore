@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
@@ -21,28 +21,32 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Navbar setUser={this.setUser} user={this.state.user} />
-        <Route
-          path="/signup"
-          render={props => (
-            <Signup history={props.history} setUser={this.setUser} />
-          )}
-        />
-        <Route
-          path="/login"
-          render={props => (
-            <Login history={props.history} setUser={this.setUser} />
-          )}
-        />
-        <Route
-          exact
-          path="/products"
-          render={props => <Products {...props} user={this.state.user} />}
-        />
-        <Welcome />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar setUser={this.setUser} user={this.state.user} />
+          <Switch>
+            <Route
+              path="/signup"
+              render={props => (
+                <Signup history={props.history} setUser={this.setUser} />
+              )}
+            />
+            <Route
+              path="/login"
+              render={props => (
+                <Login history={props.history} setUser={this.setUser} />
+              )}
+            />
+            <Route
+              exact
+              path="/products"
+              render={props => <Products {...props} user={this.state.user} />}
+            />
+            <Welcome />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

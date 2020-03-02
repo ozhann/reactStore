@@ -1,5 +1,5 @@
 import React from "react";
-import dogPic from "../images/Intersect.png";
+//import dogPic from "../images/Intersect.png";
 
 class Welcome extends React.Component {
   constructor() {
@@ -9,10 +9,9 @@ class Welcome extends React.Component {
     return (
       <div className="welcome-section">
         <div className="starter-dog">
-          <img src={dogPic} alt={"logo"} />
+          <img src="../images/Intersect.png" alt={"logo"} />
         </div>
         <div className="slogan-section">
-          {" "}
           <h1>We take good care of your best friend.</h1>
           <h3>
             Lorem Ipsuem Neque porro quisquam est qui dolorem ipsum quia dolor .

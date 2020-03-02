@@ -22,7 +22,7 @@ export default class Products extends Component {
 
   render() {
     return (
-      <div>
+      <div className="products">
         <ProductsList products={this.state.products} />
       </div>
     );

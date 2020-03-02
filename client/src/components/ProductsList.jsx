@@ -7,13 +7,22 @@ const ProductsList = props => {
     const path = product.images[0];
     console.log(path);
     return (
-      <p key={product._id}>
-        {/* [product.type] */}
-        <b>
-          <Link to={`/products/${product._id}`}>{product.title}</Link>
+      <div className="product-card" key={product._id}>
+        <div className="product-image">
           <img src={path} alt={product.title} />
-        </b>
-      </p>
+        </div>
+        <div className="product-info">
+          {/* [product.type] */}
+          <Link
+            to={`/products/${product._id}`}
+            style={{ textDecoration: "none" }}
+          >
+            {product.title}
+          </Link>
+          <h5>{product.price}</h5>
+          <button>Add to cart</button>
+        </div>
+      </div>
     );
   });
 };
