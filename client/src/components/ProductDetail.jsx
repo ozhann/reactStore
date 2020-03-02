@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default class ProductDetail extends Component {
   state = {
@@ -26,18 +28,28 @@ export default class ProductDetail extends Component {
     }
     return (
       <div>
-        <div className="Product">
-          <div className="ProductImage">
-            <img src={product.product.images[0]} alt={product.product.title} />
+        <div className="product-details-page">
+          <div className="product-gallery">
+            <Carousel styles>
+              <div>
+                <img src={product.product.images[0]} />
+              </div>
+              <div>
+                <img src={product.product.images[1]} />
+              </div>
+              <div>
+                <img src={product.product.images[2]} />
+              </div>
+            </Carousel>
           </div>
-          <div>
+          <div className="product-description">
             <h2>{product.product.title}</h2>
             <h2>{product.product.price} Euro</h2>
             <p>{product.product.descriptionFull}</p>
+            <button onClick={() => this.props.addToCart(product)}>
+              Add to Cart
+            </button>
           </div>
-          <button onClick={() => this.props.addToCart(product)}>
-            Add to Cart
-          </button>
         </div>
       </div>
     );

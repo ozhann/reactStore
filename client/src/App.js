@@ -72,6 +72,7 @@ class App extends React.Component {
                   {...props}
                   user={this.state.user}
                   addToCart={this.addToCart}
+                  className="product-details-container"
                 />
               )}
             />
