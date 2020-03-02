@@ -7,10 +7,10 @@ const productSchema = new Schema(
     title: { type: String, require: true },
     category: {
       type: String,
-      enum: ["Collars", "Leashes", "Beds", "Toys", "Bowls", "Food", "Apparel"]
+      enum: ["Collars", "Leads", "Beds", "Toys", "Bowls", "Food", "Apparel"]
     },
     //descriptionShort: { type: String, minlength: 15 },
-    descriptionFull: { type: String, minlength: 20 },
+    descriptionFull: { type: String, minlength: 5 },
     price: {
       type: Number,
       //    type: Currency,
