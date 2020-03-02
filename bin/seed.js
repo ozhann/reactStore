@@ -90,8 +90,8 @@ const defaultProduct = [
     price: 10,
     onStock: 20,
     images: [
-      "../images/products/thedognalddogtoy1",
-      "../images/products/thedognalddogtoy2"
+      "../images/products/thedognalddogtoy1.png",
+      "../images/products/thedognalddogtoy2.png"
     ]
   },
   {
@@ -102,9 +102,9 @@ const defaultProduct = [
     price: 8,
     onStock: 20,
     images: [
-      "../images/products/chewer1",
-      "../images/products/chewer2",
-      "../images/products/chewer3"
+      "../images/products/chewer1.png",
+      "../images/products/chewer2.png",
+      "../images/products/chewer3.png"
     ]
   },
   {
