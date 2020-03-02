@@ -9,9 +9,6 @@ import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 
-
-
-
 class App extends React.Component {
   state = {
     user: this.props.user

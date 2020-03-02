@@ -27,7 +27,8 @@ export default class ProductDetail extends Component {
   // };
 
   // handle AddToCart -> Updatıng some ınfo
-  // Whıch ınfo? The product tıtleö and the quantıty everç
+  // Whıch ınfo? The product tıtleö and the quantıty
+  // Where? Shoppıng cart seperate page.
 
   render() {
     const product = this.state.product;
