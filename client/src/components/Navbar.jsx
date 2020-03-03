@@ -38,7 +38,7 @@ const Navbar = props => {
             <Link to="/about">ABOUT US</Link>
           </li>
           <li>
-            <Link to="/cart">CART</Link>
+            <Link to="/shoppingcart">CART</Link>
           </li>
           <li>
             <Link to="/signup">LOGIN</Link>

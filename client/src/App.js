@@ -8,6 +8,7 @@ import Products from "./components/Products";
 import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
+import ShoppingCart from "./components/ShoppingCart";
 
 class App extends React.Component {
   state = {
@@ -37,8 +38,7 @@ class App extends React.Component {
   };
 
   render() {
-    console.log(this.state.shoppingCart);
-    // console.log("order is", localStorage.getItem("shoppingCart"));
+    // console.log(this.state.shoppingCart);
 
     // Put below ınto CART COMPONENT
     let order = JSON.parse(localStorage.getItem("shoppingCart"));
@@ -85,6 +85,17 @@ class App extends React.Component {
                   user={this.state.user}
                   addToCart={this.addToCart}
                   className="product-details-container"
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/shoppingcart"
+              render={props => (
+                <ShoppingCart
+                  {...props}
+                  user={this.state.user}
+                  shoppingCart={this.state.shoppingCart}
                 />
               )}
             />

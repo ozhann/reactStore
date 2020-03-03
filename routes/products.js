@@ -3,13 +3,6 @@ const Product = require("../models/Product");
 
 /* Here we'll write the routes for the product */
 
-// add to cart route 
-
-// router.put("/shoppingcard/:id", (req, res, next) => {
-//   User.findByIdaAndUpdate(req.user._id, {shopp})
-//   .then()
-// })
-
 router.get("/products", (req, res, next) => {
   Product.find({})
     .then(products => {
