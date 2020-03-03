@@ -27,7 +27,7 @@ const Navbar = props => {
       <Link to="/" className="logo">
         Woofi
       </Link>
-      <Link to="/cart">CART</Link>
+      <Link to="/shoppingcart">CART</Link>
       <Link to="/signup">LOGIN</Link>
     </nav>
   );

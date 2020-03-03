@@ -22,7 +22,8 @@ const productSchema = new Schema(
     images: {
       type: Array,
       default: "public/images/dogpaw.png"
-    }
+    },
+    counter: 0
   },
   {
     timestamps: {
