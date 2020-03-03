@@ -38,17 +38,19 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.shoppingCart);
+    // console.log("order is", localStorage.getItem("shoppingCart"));
 
     // Put below ınto CART COMPONENT
-    // let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
+    let order = JSON.parse(localStorage.getItem("shoppingCart"));
 
     //loop over shoppıngCart
     // console.log("SHOOOOPIINNNGGGG", shoppingCart, shoppingCart.length);
-
+    console.log(order);
     return (
       <Router>
         <div className="App">
           <Navbar setUser={this.setUser} user={this.state.user} />
+
           <Switch>
             <Route
               path="/signup"

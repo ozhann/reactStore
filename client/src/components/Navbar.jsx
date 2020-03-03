@@ -21,14 +21,30 @@ const Navbar = props => {
   }
 
   return (
-    <nav className="navbar">
-      <Link to="/products">SHOP</Link>
-      <Link to="/about">ABOUT US</Link>
-      <Link to="/" className="logo">
-        Woofi
-      </Link>
-      <Link to="/cart">CART</Link>
-      <Link to="/signup">LOGIN</Link>
+    <nav>
+      <header className="header">
+        <a href="" className="logo">
+          Woofi
+        </a>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" for="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <ul className="menu">
+          <li>
+            <Link to="/products">SHOP</Link>
+          </li>
+          <li>
+            <Link to="/about">ABOUT US</Link>
+          </li>
+          <li>
+            <Link to="/cart">CART</Link>
+          </li>
+          <li>
+            <Link to="/signup">LOGIN</Link>
+          </li>
+        </ul>
+      </header>
     </nav>
   );
 };

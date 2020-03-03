@@ -30,7 +30,7 @@ export default class ProductDetail extends Component {
       <div>
         <div className="product-details-page">
           <div className="product-gallery">
-            <Carousel styles>
+            <Carousel styles showStatus={false} className="car-styles">
               <div>
                 <img src={product.product.images[0]} />
               </div>

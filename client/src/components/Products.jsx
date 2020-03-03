@@ -55,20 +55,22 @@ export default class Products extends Component {
 
   render() {
     return (
-      <div className="products">
-        <div>
+      <>
+        <div class="search-bar-container">
           <SearchBar
             updateSearchText={this.updateSearchText}
             search={this.state.searchText}
           />
           <button onClick={this.sortByPrice}>Sort by price</button>
         </div>
-        <ProductsList
-          products={this.state.products}
-          addToCart={this.props.addToCart}
-          search={this.state.searchText}
-        />
-      </div>
+        <div className="products">
+          <ProductsList
+            products={this.state.products}
+            addToCart={this.props.addToCart}
+            search={this.state.searchText}
+          />
+        </div>
+      </>
     );
   }
 }
