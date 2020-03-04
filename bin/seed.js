@@ -26,7 +26,7 @@ const defaultProduct = [
     ]
   },
   {
-    title: "The Mythical Mutt Bundle",
+    title: "The Mythical Butt Bundle",
     category: "Apparel",
     descriptionFull:
       "Spot a pegasus in the wild… we mean in your living room. POSE & PLAY - Pose: Bungee straps fit on a variety of pup heads, the wings can be secured with two different velcro lengths to fit around their belly. Play: The mixed medley of materials (including fabulous gold lame!) make this toy a treat to gnaw on. Both wings and horn have long hair and are packed with crinkle, perfect for pups who life to thrash and shred.",

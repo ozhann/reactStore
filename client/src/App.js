@@ -9,6 +9,7 @@ import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 import ShoppingCart from "./components/ShoppingCart";
+localStorage.setItem("shoppingCart", JSON.stringify([]));
 
 class App extends React.Component {
   state = {
@@ -37,20 +38,32 @@ class App extends React.Component {
     );
   };
 
+  removeFromCart = product => {
+    console.log("removed", product);
+    this.setState(
+      {
+        shoppingCart: [...this.state.shoppingCart, product]
+      },
+      () => {
+        localStorage.removeItem(
+          "shoppingCart",
+          JSON.stringify(this.state.shoppingCart)
+        );
+      }
+    );
+  };
+
   render() {
     // console.log(this.state.shoppingCart);
-
     // Put below ınto CART COMPONENT
     let order = JSON.parse(localStorage.getItem("shoppingCart"));
-
     //loop over shoppıngCart
     // console.log("SHOOOOPIINNNGGGG", shoppingCart, shoppingCart.length);
     console.log(order);
     return (
       <Router>
         <div className="App">
-          <Navbar setUser={this.setUser} user={this.state.user} />
-
+          <Navbar setUser={this.setUser} user={this.state.user} />​
           <Switch>
             <Route
               path="/signup"
@@ -75,7 +88,7 @@ class App extends React.Component {
                 />
               )}
             />
-
+            ​
             <Route
               exact
               path="/products/:productId"
@@ -99,10 +112,10 @@ class App extends React.Component {
                 />
               )}
             />
-
+            ​
             <Welcome />
           </Switch>
-          <Footer />
+          <Footer className="footer" />
         </div>
       </Router>
     );

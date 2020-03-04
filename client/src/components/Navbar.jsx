@@ -23,9 +23,10 @@ const Navbar = props => {
   return (
     <nav>
       <header className="header">
-        <a href="" className="logo">
+        <Link to="/" className="logo">
           Woofi
-        </a>
+        </Link>
+
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" for="menu-btn">
           <span className="navicon"></span>

@@ -1,36 +1,62 @@
+.App {
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
 body {
   margin: 0;
   font-family: Josefin Sans;
   font-weight: bold;
 }
 
+/* .footer {
+    margin-top: auto;
+  } */
+
 .welcome-section {
   display: flex;
+  flex-wrap: no-wrap;
 }
 .slogan-section {
-  flex-grow: 3;
+  display: flex;
+  /* flex-grow: 2; */
+  margin: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.starter-dog {
+  padding-left: 10px;
+  /* flex-grow: 1; */
 }
 .welcome-section img {
-  padding-left: 40px;
-  height: 50%;
+  /* height: 50%; */
 }
 
 .welcome-section button {
   color: white;
-  background-color: #dfaeba;
+  background-color: rgb(135, 185, 196);
   font-family: Josefin Sans;
   font-size: 1.5rem;
   padding: 0.5rem;
+  max-width: 50%;
+  align-self: center;
+  margin-top: 20px;
 }
 
 .bestsellers {
   background-image: linear-gradient(
-    to right top,
-    #dfaeba,
-    #e4c3d3,
-    #e9d7e6,
-    #f1ecf5,
-    #ffffff
+    to bottom,
+    #ffffff,
+    #e8ebf3,
+    #cbd9e7,
+    #aac9d8,
+    #87b9c4
   );
 }
 
@@ -61,14 +87,18 @@ body {
 }
 .product-info button {
   color: white;
-  background-color: rgba(223, 174, 186, 1);
+  background-color: rgb(135, 185, 196);
   font-family: Josefin Sans;
   font-size: 1rem;
-  padding: 0.2rem;
+  padding: 0.4rem;
+  border-radius: 10px;
 }
 
 .product-image img {
   max-width: 100%;
+}
+.product-info h5 {
+  margin: 0.5rem;
 }
 
 .product-details-page {
@@ -249,17 +279,17 @@ nav {
 /* navbar styling ends-------------------------------->*/
 
 /* footer */
+
 .footerback {
   background-image: linear-gradient(
-    to right top,
-    #dfaeba,
-    #e4c3d3,
-    #e9d7e6,
-    #f1ecf5,
-    #ffffff
+    to bottom,
+    #ffffff,
+    #e8ebf3,
+    #cbd9e7,
+    #aac9d8,
+    #87b9c4
   );
-  padding-top: 20px;
-  padding-bottom: 10px;
+  margin-top: auto;
 }
 
 .four-columns {
@@ -288,4 +318,25 @@ nav {
 }
 .copyr {
   margin: 0;
+}
+
+/* shoping cart */
+
+.remove-button {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.plusminus {
+  color: white;
+  background-color: grey;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+}
+
+.image-cart {
+  height: 100px;
 }
