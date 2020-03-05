@@ -16,6 +16,11 @@ export default class Checkout extends React.Component {
         stripeKey="pk_test_ViicSjlSHJc9hdIoq2J8feHg00H2cAKMLf"
         amount={this.props.price}
         token={this.onToken}
+        currency="EUR"
+        billingAddress
+        shippingAddress
+        name="Woofi Ltd."
+        description="Awesome Product"
       />
     );
   }

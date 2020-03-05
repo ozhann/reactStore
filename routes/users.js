@@ -16,7 +16,7 @@ router.post("/signup", (req, res) => {
     return res.status(400).json({ message: "Password is too short" });
   }
 
-  User.findOne({ email: req.body.email })
+  User.findOne({ email: email })
     .then(found => {
       if (found) {
         return res.status(400).json({ message: "Email is already exist" });
@@ -27,7 +27,7 @@ router.post("/signup", (req, res) => {
           return bcrypt.hash(password, salt);
         })
         .then(hash => {
-          return User.create({ username: username, password: hash });
+          return User.create({ email: email, password: hash });
         })
         .then(newUser => {
           // passport login
@@ -39,6 +39,7 @@ router.post("/signup", (req, res) => {
         });
     })
     .catch(err => {
+      console.log(err);
       res.status(500).json({ message: "Error while authorizing" });
     });
 });

@@ -37,7 +37,7 @@ export default class Login extends Component {
   render() {
     return (
       <React.Fragment>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label htmlFor="email">Email: </label>
           <input
             type="email"
