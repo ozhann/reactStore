@@ -13,9 +13,19 @@ export default class Checkout extends React.Component {
   render() {
     return (
       <StripeCheckout
-        stripeKey="pk_test_ViicSjlSHJc9hdIoq2J8feHg00H2cAKMLf"
         amount={this.props.price}
+        billingAddress
+        shippingAddress
+        description="woof woof"
+        currency="EUR"
+        image=""
+        locale="auto"
+        name="YourDomain.tld"
+        stripeKey="pk_test_ViicSjlSHJc9hdIoq2J8feHg00H2cAKMLf"
         token={this.onToken}
+        zipCode
+        label="Pay with credit card"
+        panelLabel="Pay {{amount}}"
       />
     );
   }
