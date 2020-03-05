@@ -6,13 +6,18 @@ import ProductsList from "./ProductsList";
 const SearchBar = props => {
   return (
     <div>
-      <input
-        placeholder="Search for products..."
-        value={props.search}
-        onChange={event => {
-          props.updateSearchText(event.target.value);
-        }}
-      />
+      <div className="search-for-products">
+        <h3>Search for products</h3>
+        <input
+          className="input"
+          className="search-bar"
+          placeholder="Search for products..."
+          value={props.search}
+          onChange={event => {
+            props.updateSearchText(event.target.value);
+          }}
+        />
+      </div>
     </div>
   );
 };
@@ -76,15 +81,13 @@ export default class Products extends Component {
     return (
       <>
         <div class="search-bar-container">
-          <div className="search-for-products">
-            <h3>Search for products</h3>
-            <SearchBar
-              updateSearchText={this.updateSearchText}
-              search={this.state.searchText}
-            />
-          </div>
-          <button onClick={this.sortByExpensive}>Sort by expensive</button>
-          <button onClick={this.sortByCheaper}>Sort by cheaper</button>
+          <SearchBar
+            updateSearchText={this.updateSearchText}
+            search={this.state.searchText}
+          />
+
+          <button onClick={this.sortByExpensive}>Sort by price ↑</button>
+          <button onClick={this.sortByCheaper}>Sort by price ↓</button>
           {/* <button onClick={this.sortByPrice}>Sort by price</button> */}
         </div>
         <div className="products">
