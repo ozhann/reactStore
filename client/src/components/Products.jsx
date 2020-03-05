@@ -29,7 +29,7 @@ export default class Products extends Component {
   }
 
   getData = () => {
-    axios.get("/products").then(response => {
+    axios.get("/api/products").then(response => {
       console.log("test", response.data.message);
       this.setState({
         products: response.data.products

@@ -9,6 +9,6 @@ const productsRoutes = require("./products");
 // });
 
 router.use("/api/auth", usersRoutes);
-router.use("/", productsRoutes);
+router.use("/api", productsRoutes);
 
 module.exports = router;
