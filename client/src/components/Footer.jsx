@@ -25,18 +25,43 @@ const Footer = props => {
         <div className="four-columns">
           <div className="first-column">
             <h2>Subscriptions</h2>
-            <h2>About Us</h2>
+            <h5>Newsletter</h5>
+            <h5>Get the App</h5>
+            <h5>Woofi Podcast</h5>
+            <h2>About us</h2>
+            <h5>The team</h5>
+            <h5>Jobs</h5>
           </div>
           <div className="second-column">
             <h2>Press</h2>
+            <h5>Media kit</h5>
+            <h5>Retail enquiries</h5>
             <h2>Need help?</h2>
+            <h5>Chat</h5>
+            <h5>Questions and Answers</h5>
           </div>
 
           <div className="third-column">
             <h2>Follow Us</h2>
+            <div className="icons-social">
+              <img
+                src="../images/iconfinder_Rounded_Facebook_svg_5282541.png"
+                alt={"icon"}
+              />
+              <img
+                src="../images/iconfinder_Rounded_Instagram_svg_5282544.png"
+                alt={"icon"}
+              />
+              <img
+                src="../images/iconfinder_Rounded_Pinterest2_svg_5282545.png"
+                alt={"icon"}
+              />
+            </div>
           </div>
           <div className="fourth-column">
             <h2>Contact Us</h2>
+            <h5>friend@woofi.com</h5>
+            <h5>+49 177 777 777</h5>
           </div>
         </div>
         <p className="copyr">

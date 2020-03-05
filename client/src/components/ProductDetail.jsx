@@ -46,7 +46,10 @@ export default class ProductDetail extends Component {
             <h2>{product.product.title}</h2>
             <h2>{product.product.price} Euro</h2>
             <p>{product.product.descriptionFull}</p>
-            <button onClick={() => this.props.addToCart(product)}>
+            <button
+              className="detail-buuton"
+              onClick={() => this.props.addToCart(product.product)}
+            >
               Add to Cart
             </button>
           </div>

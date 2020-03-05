@@ -13,19 +13,6 @@ const Product = require("../models/Product");
 
 const defaultProduct = [
   {
-    title: "Tubular TV Dinner",
-    category: "Toys",
-    descriptionFull:
-      "This tv dinner dog toy offers your pup a delicious medley of different materials and noisemakers. Your dog will be enticed by this toy’s ballistic nylon piping and Crazy Crinkle lining.",
-    price: 10,
-    onStock: 20,
-    images: [
-      "../images/products/tabulartvdinner1.png",
-      "../images/products/tabulartvdinner2.png",
-      "../images/products/tabulartvdinner3.png"
-    ]
-  },
-  {
     title: "The Mythical Butt Bundle",
     category: "Apparel",
     descriptionFull:
@@ -53,6 +40,18 @@ const defaultProduct = [
     ]
   },
   {
+    title: "The Dognald Dog Toy",
+    category: "Toys",
+    descriptionFull:
+      "One doggedly determined Repuplican.The Dognald is ready to lead ... your pup to playtime. Your dog will love The Dognald's reinforced seams, perfect for tough debates. And, you'll never hear this plush guy squeak. Squeaking is for wimps. When chewed, The Dognald grunts. Like a winner. One of Bark's best-selling toys of all time, your pup will love it!",
+    price: 10,
+    onStock: 20,
+    images: [
+      "../images/products/thedognalddogtoy1.png",
+      "../images/products/thedognalddogtoy2.png"
+    ]
+  },
+  {
     title: "Warm hood",
     category: "Toys",
     descriptionFull:
@@ -60,6 +59,19 @@ const defaultProduct = [
     price: 10,
     onStock: 20,
     images: ["../images/products/blackhat.png"]
+  },
+  {
+    title: "Tubular TV Dinner",
+    category: "Toys",
+    descriptionFull:
+      "This tv dinner dog toy offers your pup a delicious medley of different materials and noisemakers. Your dog will be enticed by this toy’s ballistic nylon piping and Crazy Crinkle lining.",
+    price: 10,
+    onStock: 20,
+    images: [
+      "../images/products/tabulartvdinner1.png",
+      "../images/products/tabulartvdinner2.png",
+      "../images/products/tabulartvdinner3.png"
+    ]
   },
   {
     title: "Furst Down Football",
@@ -82,18 +94,7 @@ const defaultProduct = [
     onStock: 20,
     images: ["../images/products/boots.png"]
   },
-  {
-    title: "The Dognald Dog Toy",
-    category: "Toys",
-    descriptionFull:
-      "One doggedly determined Repuplican.The Dognald is ready to lead ... your pup to playtime. Your dog will love The Dognald's reinforced seams, perfect for tough debates. And, you'll never hear this plush guy squeak. Squeaking is for wimps. When chewed, The Dognald grunts. Like a winner. One of Bark's best-selling toys of all time, your pup will love it!",
-    price: 10,
-    onStock: 20,
-    images: [
-      "../images/products/thedognalddogtoy1.png",
-      "../images/products/thedognalddogtoy2.png"
-    ]
-  },
+
   {
     title: "Peanut Butter Benebone",
     category: "Food",

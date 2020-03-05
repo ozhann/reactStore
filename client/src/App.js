@@ -9,7 +9,13 @@ import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 import ShoppingCart from "./components/ShoppingCart";
-localStorage.setItem("shoppingCart", JSON.stringify([]));
+import Checkout from "./components/Checkout";
+let checkCart = JSON.parse(window.localStorage.getItem("shoppingCart"));
+console.log(checkCart);
+if (checkCart === null) {
+  console.log("sup people?");
+  localStorage.setItem("shoppingCart", JSON.stringify([]));
+}
 
 class App extends React.Component {
   state = {

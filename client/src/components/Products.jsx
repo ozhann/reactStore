@@ -7,6 +7,7 @@ const SearchBar = props => {
   return (
     <div>
       <input
+        placeholder="Search for products..."
         value={props.search}
         onChange={event => {
           props.updateSearchText(event.target.value);
@@ -19,6 +20,7 @@ const SearchBar = props => {
 export default class Products extends Component {
   state = {
     products: [],
+    searchedProducts: [],
     searchText: ""
   };
 
@@ -37,11 +39,28 @@ export default class Products extends Component {
 
   //sort products by price
 
-  sortByPrice = () => {
+  // sortByPrice = () => {
+  //   const sorted = [...this.state.products].sort((a, b) => {
+  //     return b.price - a.price;
+  //   });
+  //   console.log("sorted", sorted);
+  //   this.setState({
+  //     products: sorted
+  //   });
+  // };
+
+  sortByExpensive = () => {
     const sorted = [...this.state.products].sort((a, b) => {
       return b.price - a.price;
     });
-    console.log("sorted", sorted);
+    this.setState({
+      products: sorted
+    });
+  };
+  sortByCheaper = () => {
+    const sorted = [...this.state.products].sort((a, b) => {
+      return a.price - b.price;
+    });
     this.setState({
       products: sorted
     });
@@ -57,11 +76,16 @@ export default class Products extends Component {
     return (
       <>
         <div class="search-bar-container">
-          <SearchBar
-            updateSearchText={this.updateSearchText}
-            search={this.state.searchText}
-          />
-          <button onClick={this.sortByPrice}>Sort by price</button>
+          <div className="search-for-products">
+            <h3>Search for products</h3>
+            <SearchBar
+              updateSearchText={this.updateSearchText}
+              search={this.state.searchText}
+            />
+          </div>
+          <button onClick={this.sortByExpensive}>Sort by expensive</button>
+          <button onClick={this.sortByCheaper}>Sort by cheaper</button>
+          {/* <button onClick={this.sortByPrice}>Sort by price</button> */}
         </div>
         <div className="products">
           <ProductsList

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Checkout from "../components/Checkout";
 
 class ShoppingCart extends Component {
   state = {
@@ -101,16 +102,16 @@ class ShoppingCart extends Component {
                       </button>{" "}
                     </td>
                     <td>
-                      <button
+                      {/* <button
                         className="plusminus"
                         onClick={() => this.reduceQty(product)}
                       >
                         -
-                      </button>
+                      </button> */}
                       {productCounter[i].counter}
-                      <button className="plusminus" onClick={this.increaseQty}>
+                      {/* <button className="plusminus" onClick={this.increaseQty}>
                         +
-                      </button>
+                      </button> */}
                     </td>
                     <td>€{product.details.price}</td>
                     <td>
@@ -118,7 +119,7 @@ class ShoppingCart extends Component {
                     </td>
                   </tr>
                 ))
-              : "oh no! its is not"}
+              : "Your cart is empty"}
           </tbody>
         </table>
 
@@ -126,7 +127,7 @@ class ShoppingCart extends Component {
           <h1>Total</h1>
           <h1>€{total}</h1>
           <p>Free Delivery</p>
-          <button>GO TO CHECKOUT</button>
+          <Checkout price={total * 100} />
         </div>
       </div>
     );
